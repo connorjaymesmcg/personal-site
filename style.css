@@ -5,12 +5,13 @@
 }
 
 header {
-  height: 95vh;
+  height: 80vh;
   background-image: url(./asset/F8C88A3A-1BC4-4F99-94BF-A9B163DD537D.jpg);
   background-attachment: fixed;
-  background-position: top;
-  background-size: cover;
+  background-position: center -200px;
+  background-size: 100%;
   background-repeat: no-repeat;
+  min-height: 100%;
 }
 
 .nav-links {
