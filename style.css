@@ -4,3 +4,18 @@
   padding: 0;
 }
 
+header {
+  height: 95vh;
+  background-image: url(./asset/F8C88A3A-1BC4-4F99-94BF-A9B163DD537D.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
