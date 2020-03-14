@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 80vh;
+  height: 100vh;
   background-image: url(./asset/F8C88A3A-1BC4-4F99-94BF-A9B163DD537D.jpg);
   background-attachment: fixed;
   background-position: center -200px;
@@ -14,9 +14,44 @@ header {
   min-height: 100%;
 }
 
+.nav-wrapper {
+  width: 100%;
+  background-color: purple;
+}
+
+.sticky nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .nav-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
   list-style: none;
+  text-align: center;
+}
+
+.nav-links li {
+  padding: 0 10px;
+}
+
+.divider {
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px black solid;
+}
+
+.section-copy {
+  text-align: center;
+  line-height: 2em;
+}
+
+.main {
+  width: 75%;
+  margin: 0 auto;
 }
