@@ -16,13 +16,13 @@ header {
 
 .nav-wrapper {
   width: 100%;
-  background-color: purple;
 }
 
-.sticky nav {
+.sticky nav{
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: purple;
 }
 
 .nav-links {
