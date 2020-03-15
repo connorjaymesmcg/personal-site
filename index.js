@@ -5,7 +5,7 @@ let navTop = nav.offsetTop;
 function stickyScroll() {
   console.log(`navtop = ${navTop}`);
   console.log(`scrollY = ${window.scrollY}`);
-  if (window.scrollY >= navTop) {
+  if (window.scrollY > navTop) {
     document.body.style.paddingTop = nav.offsetHeight + 'px';
     document.body.classList.add('sticky');
   } else {
