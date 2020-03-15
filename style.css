@@ -1,8 +1,12 @@
+/* --- RESET --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* --- Headings --- */
 
 header {
   height: 100vh;
@@ -14,11 +18,13 @@ header {
   min-height: 100%;
 }
 
+/* --- Navigation --- */
+
 .nav-wrapper {
   width: 100%;
 }
 
-.sticky nav{
+.sticky nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -36,6 +42,8 @@ header {
 .nav-links li {
   padding: 0 10px;
 }
+
+/* --- Page Content --- */
 
 .divider {
   text-align: center;
