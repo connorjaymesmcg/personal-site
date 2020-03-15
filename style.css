@@ -63,3 +63,13 @@ header {
   width: 75%;
   margin: 0 auto;
 }
+
+/* --- Responsive --- */
+
+@media screen and (max-width: 1000px) {
+  header {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
