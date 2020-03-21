@@ -17,7 +17,14 @@ function stickyScroll() {
 window.addEventListener('scroll', stickyScroll)
 
 
-// const navSlide = () => {
-//   const respNav = document.querySelector('.resp-nav');
-//   const nav = 
-// }
+const navSlide = () => {
+  const respNav = document.querySelector('.resp-nav');
+  const navLinks = document.querySelector('.main-nav');
+
+  respNav.addEventListener('click', () => {
+    console.log('clicked')
+    navLinks.classList.toggle('nav-active')
+  })
+}
+
+navSlide();
