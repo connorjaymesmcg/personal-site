@@ -19,12 +19,24 @@ window.addEventListener('scroll', stickyScroll)
 
 const navSlide = () => {
   const respNav = document.querySelector('.resp-nav');
-  const navLinks = document.querySelector('.main-nav');
+  const mainNav = document.querySelector('.main-nav');
+  const navLinks = document.querySelectorAll('.main-nav li')
 
+  //Toggle Nav
   respNav.addEventListener('click', () => {
-    console.log('clicked')
-    navLinks.classList.toggle('nav-active')
-  })
-}
+    mainNav.classList.toggle('nav-active')
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = ''
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`
+      }
+    });
+    //Burger Animation
+    respNav.classList.toggle('toggle')
+
+
+  });
+};
 
 navSlide();
