@@ -1,5 +1,5 @@
 console.log('working')
-let nav = document.querySelector('.nav-wrapper');
+let nav = document.querySelector('nav');
 let navTop = nav.offsetTop;
 
 function stickyScroll() {
@@ -29,7 +29,7 @@ const navSlide = () => {
       if (link.style.animation) {
         link.style.animation = ''
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .5}s`
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`
       }
     });
     //Burger Animation
