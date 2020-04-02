@@ -119,14 +119,13 @@ header {
 
 /* --- Responsive --- */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
   header {
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-position: center -220px;
+    background-size: auto;
   }
   .main-nav {
     position: absolute;
