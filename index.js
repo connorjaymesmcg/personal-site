@@ -31,12 +31,13 @@ const navSlide = () => {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
           0.3}s`;
       }
+      link.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-active');
+      });
     });
     //Burger Animation
     respNav.classList.toggle("toggle");
     console.log("clicked burger");
-    navLinks.classList.toggle(".nav-active");
-    console.log("link clicked");
   });
 };
 
