@@ -125,7 +125,7 @@ header {
   }
   header {
     background-position: center -220px;
-    background-size: auto;
+    background-size: cover;
   }
   .main-nav {
     position: absolute;

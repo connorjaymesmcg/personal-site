@@ -3,8 +3,6 @@ let nav = document.querySelector("nav");
 let navTop = nav.offsetTop;
 
 function stickyScroll() {
-  console.log(`navtop = ${navTop}`);
-  console.log(`scrollY = ${window.scrollY}`);
   if (window.scrollY >= navTop) {
     document.body.style.paddingTop = nav.offsetHeight + "px";
     document.body.classList.add("sticky");
@@ -24,15 +22,14 @@ const navSlide = () => {
   //Toggle Nav
   respNav.addEventListener("click", () => {
     mainNav.classList.toggle("nav-active");
+    console.log('responsive nav is active')
     navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
-          0.3}s`;
-      }
+      link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 +
+        0.3}s`;
       link.addEventListener('click', () => {
         mainNav.classList.toggle('nav-active');
+        console.log('navigation link has been clicked')
+        respNav.classList.toggle('toggle')
       });
     });
     //Burger Animation
