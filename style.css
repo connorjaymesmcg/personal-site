@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #ecf0f1;
 }
 
 body {
@@ -17,11 +18,11 @@ body {
 /* --- Headings --- */
 
 header {
-  height: 160vh;
-  background-image: url(./asset/F8C88A3A-1BC4-4F99-94BF-A9B163DD537D.jpg);
+  height: 100vh;
+  background-image: url(./asset/IMG_0701.jpg);
   background-attachment: fixed;
-  background-position: center -220px;
-  background-size: 100%;
+  background-position: center -300px;
+  background-size: 110%;
   background-repeat: no-repeat;
   min-height: 100%;
 }
@@ -54,6 +55,13 @@ header {
   width: 100%;
   color: #eeeeee;
   background-color: #393e46;
+  padding: 20px;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .sticky nav {
@@ -67,7 +75,6 @@ header {
 .main-nav {
   display: flex;
   flex-direction: row;
-  /* justify-content: end; */
   align-items: center;
   list-style: none;
   text-align: center;
@@ -104,7 +111,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px black solid;
 }
 
 .section-copy {
@@ -113,18 +119,26 @@ header {
 }
 
 .main {
-  width: 75%;
   margin: 0 auto;
+}
+
+.about-content1 {
+  height: 400px;
+  background-image: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* --- Responsive --- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   body {
     overflow-x: hidden;
   }
   header {
-    background-position: center -220px;
+    background-position: center center;
     background-size: cover;
   }
   .main-nav {
