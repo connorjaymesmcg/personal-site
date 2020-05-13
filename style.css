@@ -19,15 +19,11 @@ body {
 
 header {
   height: 100vh;
-  background-image: url(./asset/IMG_0701.jpg);
-  background-attachment: fixed;
-  background-position: center -300px;
-  background-size: 110%;
-  background-repeat: no-repeat;
-  min-height: 100%;
 }
 
 .header-wrapper {
+  background: url(./asset/8C7E4DC9-62A0-4082-954E-770B0641185F.JPEG) no-repeat center center fixed;
+  background-size: cover;
   height: 100%;
 }
 
@@ -61,7 +57,7 @@ header {
 .logo-wrapper {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 50%;
 }
 
 .sticky nav {
@@ -103,14 +99,40 @@ header {
   transition: all 0.3s ease;
 }
 
+.social-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 50px;
+}
+
+/* --- Anchors --- */
+
+#about {
+  display: block;
+  position: relative;
+  top: -100px;
+}
+
+#home {
+  display: block;
+  position: relative;
+  top: -100px;
+}
+
+#projects {
+  display: block;
+  position: relative;
+  top: -100px;
+}
+
 /* --- Page Content --- */
 
-.divider {
+.section {
   text-align: center;
-  height: 20rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .section-copy {
@@ -118,12 +140,8 @@ header {
   line-height: 2em;
 }
 
-.main {
-  margin: 0 auto;
-}
-
-.about-content1 {
-  height: 400px;
+.about-img-divider {
+  height: 600px;
   background-image: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG);
   background-attachment: fixed;
   background-position: center;
@@ -137,9 +155,11 @@ header {
   body {
     overflow-x: hidden;
   }
-  header {
-    background-position: center center;
+  .header-wrapper {
+    height: 100%;
+    background: url(./asset/8C7E4DC9-62A0-4082-954E-770B0641185F.JPEG) no-repeat center center;
     background-size: cover;
+    background-attachment: scroll;
   }
   .main-nav {
     position: absolute;
@@ -149,8 +169,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    width: 30%;
+    justify-content: space-evenly;
+    width: 100%;
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
     background-color: #393e46;
@@ -160,6 +180,10 @@ header {
   }
   .resp-nav {
     display: block;
+  }
+  .about-img-divider {
+    background: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG) no-repeat center center;
+    background-size: cover;
   }
 }
 
