@@ -174,6 +174,15 @@ header {
   height: 100%;
 }
 
+.passions-img-divider {
+  height: 600px;
+  background-image: url(./asset/hamjob_jan2020\ -\ 1h9a9437.JPG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .section-copy {
   display: flex;
   flex-direction: column;
@@ -219,9 +228,23 @@ header {
   .resp-nav {
     display: block;
   }
+  .social-links {
+    padding: 0;
+    font-size: 40px;
+  }
+  .social-links li {
+    padding: 0 20px;
+  }
   .about-img-divider {
     background: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG) no-repeat center center;
     background-size: cover;
+  }
+  .about .main {
+    height: 100%;
+  }
+  .about-copy {
+    flex-direction: column;
+    height: 100%;
   }
 }
 
