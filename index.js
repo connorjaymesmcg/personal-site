@@ -1,4 +1,3 @@
-console.log('working');
 let nav = document.querySelector('nav');
 let navTop = nav.offsetTop;
 function stickyScroll() {
@@ -11,6 +10,7 @@ function stickyScroll() {
   }
 }
 window.addEventListener('scroll', stickyScroll);
+
 const toggleAnimation = (links) => {
   links.forEach((link, index) => {
     if (link.style.animation) {
@@ -22,10 +22,12 @@ const toggleAnimation = (links) => {
     }
   });
 };
+
 const navSlide = () => {
   const respNav = document.querySelector('.resp-nav');
   const mainNav = document.querySelector('.main-nav');
   const navLinks = document.querySelectorAll('.main-nav li');
+
   //Toggle Nav
   respNav.addEventListener('click', () => {
     mainNav.classList.toggle('nav-active');
@@ -35,6 +37,7 @@ const navSlide = () => {
     respNav.classList.toggle('toggle');
     console.log('clicked burger');
   });
+
   navLinks.forEach((link) => {
     link.addEventListener('click', () => {
       console.log('link clicked:', link);
@@ -45,4 +48,5 @@ const navSlide = () => {
     });
   });
 };
+
 navSlide();
