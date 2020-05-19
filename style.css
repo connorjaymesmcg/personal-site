@@ -168,7 +168,7 @@ header {
   height: 70vh;
 }
 
-.about-main {
+.main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,7 @@ header {
   margin-bottom: 9rem;
 }
 
-.about-container {
+.container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,7 +190,7 @@ header {
   border-radius: 10px;
 }
 
-.section-copy {
+.copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +199,7 @@ header {
   height: inherit;
 }
 
-.section-copy:last-child {
+.copy:last-child {
   border-right: none;
 }
 
@@ -217,6 +217,8 @@ header {
 .passions-img-divider {
   height: 70vh;
 }
+
+.passions-container {}
 
 .fas {
   font-size: 50px;
