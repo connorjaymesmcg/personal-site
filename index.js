@@ -2,7 +2,7 @@ let nav = document.querySelector('nav');
 let navTop = nav.offsetTop;
 function stickyScroll() {
   if (window.scrollY >= navTop) {
-    document.body.style.paddingTop = nav.offsetHeight + 'px';
+    // document.body.style.paddingTop = nav.offsetHeight + 'px';
     document.body.classList.add('sticky');
   } else {
     document.body.style.paddingTop = 0;

@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  font-size: 64.5%;
 }
 
 /* --- Headings --- */
@@ -132,23 +133,19 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
-}
-
-.section-copy {
-  text-align: center;
-  line-height: 2em;
+  border-top: black 2px solid;
+  align-items: center;
+  height: 120vh;
 }
 
 .about-section {
-  align-items: center;
   background-image: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-between;
-  border-top: black 2px solid;
 }
 
 .about-headline {
@@ -159,13 +156,8 @@ header {
   width: 50%;
   text-align: center;
   background-color: ivory;
-  /* margin-top: -7.5rem; */
   box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-}
-
-.about-img-divider {
-  height: 70vh;
 }
 
 .main {
@@ -177,7 +169,7 @@ header {
   font-size: 12px;
   background-color: ivory;
   border-radius: 10px;
-  margin-bottom: 9rem;
+  /* margin-bottom: 9rem; */
 }
 
 .container {
@@ -204,24 +196,21 @@ header {
 }
 
 .passions-section {
-  align-items: center;
   background-image: url(./asset/hamjob_jan2020\ -\ 1h9a9437.JPG);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  justify-content: space-between;
-  border-top: black 2px solid;
-}
-
-.passions-img-divider {
-  height: 70vh;
 }
 
 .passions-container {}
 
 .fas {
   font-size: 50px;
+}
+
+footer {
+  height: 20vh;
 }
 
 /* --- Responsive --- */
@@ -263,16 +252,24 @@ header {
   .social-links li {
     padding: 0 20px;
   }
-  .about-img-divider {
+  .section {}
+  .main {
+    height: 100vh;
+  }
+  .container {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .copy {
+    padding: 10px;
+  }
+  .about-section {
     background: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG) no-repeat center center;
     background-size: cover;
   }
-  .about .main {
-    height: 100%;
-  }
-  .about-copy {
-    flex-direction: column;
-    height: 100%;
+  .passions-section {
+    background: url(./asset/hamjob_jan2020\ -\ 1h9a9437.JPG) no-repeat center center;
+    background-size: cover;
   }
 }
 
