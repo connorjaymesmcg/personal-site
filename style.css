@@ -32,6 +32,7 @@ header {
   background: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
+  display: flex;
 }
 
 .passions-wrapper {
@@ -44,22 +45,6 @@ header {
   background: url(./asset/maxwell-nelson-taiuG8CPKAQ-unsplash.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
-}
-
-.main-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: white; */
-  color: #eeeeee;
-  font-size: 4rem;
-  height: 70px;
-  width: 200px;
 }
 
 /* --- Navigation --- */
@@ -125,26 +110,6 @@ header {
   padding-left: 50px;
 }
 
-/* --- Anchors --- */
-
-#about {
-  display: block;
-  position: relative;
-  top: -100px;
-}
-
-#home {
-  display: block;
-  position: relative;
-  top: -100px;
-}
-
-#projects {
-  display: block;
-  position: relative;
-  top: -100px;
-}
-
 /* --- Page Content --- */
 
 .section {
@@ -155,15 +120,6 @@ header {
   margin: 0 auto;
   border-top: black 2px solid;
   align-items: center;
-  height: 120vh;
-}
-
-.about-section {
-  background-image: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about-headline {
@@ -182,7 +138,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40vh;
   width: 90%;
   font-size: 12px;
   background-color: ivory;
@@ -211,16 +166,6 @@ header {
 .copy:last-child {
   border-right: none;
 }
-
-.passions-section {
-  background-image: url(./asset/hamjob_jan2020\ -\ 1h9a9437.JPG);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.passions-container {}
 
 .fas {
   font-size: 50px;
@@ -287,7 +232,6 @@ footer {
   .social-links li {
     padding: 0 20px;
   }
-  .section {}
   .main {
     background-color: transparent;
   }
@@ -295,7 +239,6 @@ footer {
     flex-direction: column;
     overflow: hidden;
     box-shadow: none;
-    height: auto;
     position: relative;
   }
   .copy {
@@ -305,10 +248,6 @@ footer {
     background-color: ivory;
     margin: 10px;
     position: relative;
-  }
-  .about-section {
-    background: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG) no-repeat center center;
-    background-size: cover;
   }
   .passions-section {
     background: url(./asset/hamjob_jan2020\ -\ 1h9a9437.JPG) no-repeat center center;
