@@ -120,39 +120,29 @@ header {
   margin: 0 auto;
   border-top: black 2px solid;
   align-items: center;
-}
-
-.about-headline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
-  width: 50%;
-  text-align: center;
-  background-color: ivory;
-  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23326a9a' fill-opacity='0.07' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  position: relative;
 }
 
 .main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
   font-size: 12px;
-  background-color: ivory;
-  border-radius: 10px;
+  height: 100%;
   /* margin-bottom: 9rem; */
 }
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  min-width: 100%;
+  max-width: 80%;
   height: 100%;
-  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
+  justify-content: space-around;
 }
 
 .copy {
@@ -160,7 +150,13 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 60px 35px;
-  border-right: purple 1px solid;
+  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
+  background-color: ivory;
+  border-radius: 10px;
+}
+
+.copy p {
+  padding: 20px 0;
 }
 
 .copy:last-child {
@@ -173,6 +169,11 @@ header {
 
 footer {
   height: 20vh;
+  background-color: #393E46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* --- Responsive --- */
@@ -235,6 +236,10 @@ footer {
   .main {
     background-color: transparent;
   }
+  .section {
+    background-attachment: fixed;
+    height: 100%;
+  }
   .container {
     flex-direction: column;
     overflow: hidden;
@@ -248,10 +253,6 @@ footer {
     background-color: ivory;
     margin: 10px;
     position: relative;
-  }
-  .passions-section {
-    background: url(./asset/hamjob_jan2020\ -\ 1h9a9437.JPG) no-repeat center center;
-    background-size: cover;
   }
 }
 
