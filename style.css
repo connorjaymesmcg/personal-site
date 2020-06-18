@@ -36,26 +36,26 @@ header {
 }
 
 .header-wrapper {
-  background: url(./asset/8C7E4DC9-62A0-4082-954E-770B0641185F.JPEG) no-repeat center center fixed;
+  background: url(./asset/index-bg.JPEG) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
 }
 
 .about-wrapper {
-  background: url(./asset/18FECE9D-AF43-4DEA-8793-147F1F3AD3B1.JPG) no-repeat center center fixed;
+  background: url(./asset/about-bg.JPG) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
   display: flex;
 }
 
 .passions-wrapper {
-  background: url(./asset/hamjob_jan2020\ -\ 1h9a8910.JPG) no-repeat center center fixed;
+  background: url(./asset/passions-bg.JPG) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
 }
 
 .projects-wrapper {
-  background: url(./asset/maxwell-nelson-taiuG8CPKAQ-unsplash.jpg) no-repeat center center fixed;
+  background: url(./asset/projects-bg.jpg) no-repeat center -200px fixed;
   background-size: cover;
   height: 100%;
 }
