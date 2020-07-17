@@ -169,12 +169,16 @@ header {
 
 /* --- Graph --- */
 
+.graph-wrapper {
+  width: 100% !important;
+}
+
 .graph-cont {
   width: 100%;
 }
 
 .bar {
-  height: 80px;
+  height: 100%;
   max-width: 800px;
   margin: 5px auto 10px auto;
   line-height: 30px;
@@ -284,7 +288,7 @@ header {
   height: 100%;
   border-radius: 10px;
   justify-content: space-around;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .projects .container {
@@ -292,7 +296,7 @@ header {
 }
 
 .projects .copy {
-  width: 100%;
+  width: 50%;
 }
 
 .copy {
@@ -311,10 +315,6 @@ header {
   padding: 20px 0;
 }
 
-.copy:last-child {
-  border-right: none;
-}
-
 .fas {
   font-size: 50px;
 }
@@ -328,6 +328,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .project-rtl {
@@ -335,19 +336,21 @@ header {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .showcase-text {
   display: inline-block;
+  max-width: 50%;
 }
 
 .showcase-text:first-child {
   margin-top: 0px;
 }
 
-.showcase-image img {
+.image {
   border-radius: 10px;
-  width: 100%;
+  width: 40%;
   height: auto;
 }
 
