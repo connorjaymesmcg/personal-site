@@ -48,12 +48,6 @@ header {
   display: flex;
 }
 
-.passions-wrapper {
-  background: url(./asset/passions-bg.JPG) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-}
-
 .projects-wrapper {
   background: url(./asset/projects-bg.jpg) no-repeat center -200px fixed;
   background-size: cover;
@@ -171,6 +165,8 @@ header {
 
 .graph-wrapper {
   width: 100% !important;
+  /* margin-top: 30px; */
+  display: block !important;
 }
 
 .graph-cont {
@@ -254,11 +250,11 @@ header {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   border-top: black 2px solid;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background-color: #edf4fc;
   background-image: url(./asset/Whangaehu.svg);
   background-size: cover;
@@ -268,13 +264,13 @@ header {
 
 .projects-section {
   height: 100%;
-  padding: 50px 0;
 }
 
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 12px;
   height: 100%;
   width: 100%;
@@ -287,12 +283,11 @@ header {
   max-width: 80%;
   height: 100%;
   border-radius: 10px;
-  justify-content: space-around;
-  /* overflow: hidden; */
 }
 
 .projects .container {
   width: 100%;
+  position: relative;
 }
 
 .projects .copy {
@@ -309,6 +304,7 @@ header {
   background-color: #edf4fc;
   border-radius: 10px;
   max-width: 75%;
+  margin: 10px;
 }
 
 .copy p {
@@ -323,25 +319,12 @@ header {
   padding: 10px;
 }
 
-.project-ltr {
+.showcase {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
   margin-top: 50px;
-}
-
-.project-rtl {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 50px;
-}
-
-.showcase-text {
-  display: inline-block;
-  max-width: 50%;
 }
 
 .showcase-text:first-child {
@@ -350,8 +333,8 @@ header {
 
 .image {
   border-radius: 10px;
-  width: 40%;
-  height: auto;
+  height: 400px;
+  display: inline-block;
 }
 
 hr {
