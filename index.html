@@ -5,26 +5,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glidejs@2.1.0/dist/css/glide.core.min.css">
-  <link rel="icon" href="./asset/favicon-1.ico">
+  <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+  <link rel="icon" href="./asset/aries.png" />
+
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap" rel="stylesheet" />
+
   <script src="https://kit.fontawesome.com/e20705d852.js" crossorigin="anonymous"></script>
   <title>Connor Jaymes McGinnis: Developer</title>
 </head>
 
-<body>
-  <header>
-    <a id="home"></a>
-    <div class="header-wrapper">
+<div id="hidden">
+
+  <body>
+    <div id="hidden-wrapper">
+      <header>
+        <div id="home" class="header-wrapper">
+          <div class="bottom-container">
+            <div class="bottom-text-block">
+              <div class="left">
+                <p>Connor J. McGinnis</p>
+                <p>Full stack development & music</p>
+              </div>
+              <div class="center">
+                <p>Hi friend! I'm a Burlington, VT based web developer and musician on an endless quest to make
+                  interactive
+                  things that look nice and sound cool. I'm never not creating something.</p>
+              </div>
+              <div class="right">
+                <p>connorjaymesmcg@gmail.com</p>
+                <p>802.353.8788</p>
+                <p>Burlington, VT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <nav>
         <div class="nav-wrapper">
           <div class="logo-wrapper">
-            <h2 class="logo">Connor McG</h2>
+            <a class="link" href="#home">
+              <h2 class="logo">Connor McG</h2>
+            </a>
           </div>
           <ul class="main-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="./about.html">About</a>
             </li>
@@ -41,12 +64,6 @@
               <li>
                 <i class="fab fa-linkedin"></i>
               </li>
-              <li>
-                <i class="fab fa-instagram"></i>
-              </li>
-              <li>
-                <i class="fab fa-twitter"></i>
-              </li>
             </ul>
           </ul>
           <div class="resp-nav">
@@ -56,30 +73,78 @@
           </div>
         </div>
       </nav>
+      <div class="about-section section">
+        <a id="about"></a>
+        <div class="projects-section section">
+          <div class="projects main">
+            <div class="projects container">
+              <div class="graph-wrapper">
+                <div class="graph-cont">
+                  <!-- <h3 class="graph-title">Skill Set</h3> -->
+                  <span class="line-title">HTML5</span>
+                  <div class="bar bar1">90%</div>
+                  <span class="line-title">CSS3</span>
+                  <div class="bar bar2">90%</div>
+                  <span class="line-title">Javascript</span>
+                  <div class="bar bar3">60%</div>
+                  <span class="line-title">React</span>
+                  <div class="bar bar4">40%</div>
+                  <span class="line-title">Breakfast</span>
+                  <div class="bar bar5">100%</div>
+                </div>
+              </div>
+            </div>
+            <div class="showcase">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-  <footer id="contact">
-    <h3>Let's work together</h3>
-    connorjaymesmcg@gmail.com
-    <ul class="footer-social">
-      <li>
-        <i class="fab fa-github"></i>
-      </li>
-      <li>
-        <i class="fab fa-instagram"></i>
-      </li>
-      <li>
-        <i class="fab fa-linkedin"></i>
-      </li>
-      <li>
-        <i class="fab fa-twitter"></i>
-      </li>
-    </ul>
-    <div class="footer-copyright">
-      Handcrafted with care by me
+    <div id="image-slider" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="image image1">
+              <div class="overlay">
+                <p class="hover-text">Zorkington</p>
+              </div>
+          </li>
+          <li class="splide__slide">
+            <div class="image image2">
+              <div class="overlay">
+                <p class="hover-text">Ceres Greens / BasilDash</p>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="image image3">
+              <div class="overlay">
+                <p class="hover-text">Colorbeat</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </footer>
-  <script src="./index.js"></script>
+    <footer id="contact">
+      <h3>Let's work together</h3>
+      connorjaymesmcg@gmail.com
+      <ul class="footer-social">
+        <li>
+          <i class="fab fa-github"></i>
+        </li>
+        <li>
+          <i class="fab fa-linkedin"></i>
+        </li>
+      </ul>
+      <div class="footer-copyright">Handcrafted with care by me</div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+    </script>
+</div>
 </body>
+</div>
 
 </html>
