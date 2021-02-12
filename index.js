@@ -1,11 +1,22 @@
 
 const nav = document.querySelector('.nav-wrapper');
 const navTop = nav.offsetTop;
+const toggleButton = document.querySelector('.resp-nav')
+
+toggleButton.addEventListener('click', () => {
+  if (toggleButton.style.animation) {
+    toggleButton.style.animation = '';
+  } else {
+    toggleButton.style.animation = `navToggleAnimation 0.3s ease forwards`
+  }
+})
 
 document.addEventListener('DOMContentLoaded', function () {
   new Splide('#image-slider', {
     cover: true,
-    type: 'loop'
+    rewind: true,
+    perPage: 1,
+    heightRatio: 0.5,
   }).mount();
 });
 
@@ -34,6 +45,8 @@ const toggleAnimation = (links) => {
   });
 };
 
+
+
 const navSlide = () => {
   const respNav = document.querySelector('.resp-nav');
   const mainNav = document.querySelector('.main-nav');
@@ -42,6 +55,7 @@ const navSlide = () => {
   //Toggle Nav
   respNav.addEventListener('click', () => {
     mainNav.classList.toggle('nav-active');
+    document.documentElement.classList.toggle('noScroll')
     toggleAnimation(navLinks);
     //Burger Animation
     respNav.classList.toggle('toggle');
