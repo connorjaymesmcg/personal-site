@@ -2,7 +2,11 @@
   --main-text-color: white;
 }
 
-/* --- RESET --- */
+/* /////////////////////////////// */
+
+/* RESET */
+
+/* /////////////////////////////// */
 
 * {
   box-sizing: border-box;
@@ -20,7 +24,11 @@ body {
   font-size: 64.5%;
 }
 
-/* --- UTILITY --- */
+/* /////////////////////////////// */
+
+/* COLOR */
+
+/* /////////////////////////////// */
 
 .noScroll {
   margin: 0;
@@ -28,7 +36,16 @@ body {
   overflow: hidden;
 }
 
-/* --- COLOR --- */
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* /* /////////////////////////////// */
+
+/* COLOR */
+
+/* /////////////////////////////// */
 
 /* 
 #371b4e
@@ -37,7 +54,11 @@ body {
 #edf4fc 
 */
 
-/* --- NAVIGATION --- */
+/* /////////////////////////////// */
+
+/* NAVIGATION */
+
+/* /////////////////////////////// */
 
 .nav-wrapper {
   display: flex;
@@ -108,10 +129,14 @@ body {
   display: none;
 }
 
-/* --- HEADINGS/WRAPPERS --- */
+/* /////////////////////////////// */
+
+/* HEADING / WRAPPERS */
+
+/* /////////////////////////////// */
 
 header {
-  height: 120vh;
+  height: 150vh;
 }
 
 .link {
@@ -191,7 +216,11 @@ header {
   height: 100%;
 }
 
-/* --- Buttons --- */
+/* /////////////////////////////// */
+
+/* BUTTONS */
+
+/* /////////////////////////////// */
 
 .button-container {
   margin: 0 auto;
@@ -228,100 +257,11 @@ header {
   color: #edf4fc;
 }
 
-/* --- Graph --- */
+/* /////////////////////////////// */
 
-.graph-wrapper {
-  width: 100% !important;
-  /* margin-top: 30px; */
-  display: block !important;
-  margin-top: 100px;
-  background-color: #edf4fc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 15px;
-  border-radius: 10px;
-  max-width: 60%;
-  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
-}
+/* CONTENT */
 
-.graph-cont {
-  width: 100%;
-}
-
-.bar {
-  height: 100%;
-  max-width: 800px;
-  margin: 5px auto 10px auto;
-  line-height: 30px;
-  font-size: 16px;
-  color: #edf4fc;
-  padding: 0 0 0 10px;
-  position: relative;
-  z-index: 5;
-  text-align: start;
-}
-
-.bar::before {
-  content: '';
-  width: 100%;
-  position: absolute;
-  left: 0;
-  height: 30px;
-  top: 0;
-  z-index: -2;
-  background: #75767620;
-}
-
-.bar::after {
-  content: '';
-  background: #371b4ea4;
-  height: 30px;
-  transition: 0.7s;
-  display: block;
-  width: 100%;
-  -webkit-animation: bar-before 1 1.8s;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-@-webkit-keyframes bar-before {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.bar1::after {
-  max-width: 90%;
-}
-
-.bar2::after {
-  max-width: 90%;
-}
-
-.bar3::after {
-  max-width: 60%;
-}
-
-.bar4::after {
-  max-width: 40%;
-}
-
-.bar5::after {
-  max-width: 100%;
-}
-
-.line-title {
-  font-size: 1.2em;
-}
-
-/* --- PAGE CONTENT --- */
+/* /////////////////////////////// */
 
 .splide__slide img {
   width: 100%;
@@ -489,31 +429,6 @@ hr {
   font-size: 1px;
 }
 
-/* --- SLIDESHOW --- */
-
-.slide-container {
-  display: flex;
-  justify-content: center;
-}
-
-#image-slider {
-  width: 50%;
-}
-
-#image-slider-track {
-  height: 100%;
-}
-
-#image-slider-list {
-  margin: 20px !important;
-  height: 100%;
-}
-
-.splide__slide img {
-  width: 100%;
-  height: 100%;
-}
-
 footer {
   height: 20vh;
   background-color: #371b4e;
@@ -538,7 +453,11 @@ footer {
   padding: 10px;
 }
 
-/* --- Responsive --- */
+/* /////////////////////////////// */
+
+/* RESPONSIVE */
+
+/* /////////////////////////////// */
 
 @media only screen and (max-width: 1000px), screen and (max-height: 800px) {
   body {
@@ -546,25 +465,29 @@ footer {
   }
   #hidden {
     position: relative;
-    overflow-x: hidden;
+  }
+  header {
+    height: 150vh;
   }
   .header-wrapper {
-    height: 150vh;
-    background-size: cover;
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.877)), url(./asset/passions2-bg.JPG) no-repeat center left -400px;
+    background-position: center left 20%;
+    height: 100%;
   }
   .bottom-text-block {
     flex-direction: column;
+    font-size: 160%;
+    padding-left: 20px;
   }
   .left {
     width: 100%;
+    padding-bottom: 60px;
   }
   .center {
     display: flex;
     align-items: flex-start;
     padding-top: 10px;
     padding-left: 0;
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     width: 100%;
   }
   .center p {
@@ -582,12 +505,6 @@ footer {
   }
   .passions-wrapper {
     height: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-  .projects-wrapper {
-    height: 100%;
-    background: url(./asset/maxwell-nelson-taiuG8CPKAQ-unsplash.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: scroll;
   }
@@ -653,18 +570,10 @@ footer {
     right: 14.5%;
     top: 5%;
   }
-  @keyframes navToggleAnimation {
-    from {
-      transform: translateY(50px)
-    }
-    to {
-      transform: translateY(90px);
-    }
-  }
   @keyframes navLinkFade {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(0px);
     }
     to {
       opacity: 1;
