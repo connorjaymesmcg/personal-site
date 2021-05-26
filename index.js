@@ -3,6 +3,7 @@ const navTop = document.querySelector('.nav-wrapper');
 const navHeight = navTop.getBoundingClientRect().height;
 const navActive = document.querySelector('.nav-active');
 const mainNav = document.querySelector('.main-nav');
+const burger = document.querySelector('.resp-nav')
 
 console.log(navHeight);
 
@@ -29,7 +30,8 @@ const toggleAnimation = (links) => {
 
 window.addEventListener('load', () => {
   console.log('page loaded');
-  mainNav.style.display = 'none';
+  // mainNav.style.display = 'flex';
+  burger.style.display = 'block'
 });
 
 const navSlide = () => {
@@ -49,7 +51,7 @@ const navSlide = () => {
       document.documentElement.classList.toggle('noScroll');
       respNav.classList.toggle('toggle');
       toggleAnimation(navLinks);
-      mainNav.style.display = 'none';
+      // mainNav.style.display = 'flex';
     }
   });
 
