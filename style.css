@@ -1,6 +1,6 @@
-:root {
+/* :root {
   --main-text-color: white;
-}
+} */
 
 /* /////////////////////////////// */
 
@@ -17,578 +17,72 @@
 html {
   scroll-behavior: smooth;
   background-color: #ecf0f1;
+  /* font-size: 125%; */
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 64.5%;
+  /* font-size: 64.5%; */
 }
 
-/* /////////////////////////////// */
-
-/* COLOR */
-
-/* /////////////////////////////// */
-
-.noScroll {
+ul {
+  list-style-type: none;
   margin: 0;
-  height: 100%;
-  overflow: hidden;
+  padding: 0;
 }
 
-.sticky {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
+nav ul li {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.02rem;
+  display: inline-block;
+  padding: 15px 26px 10px;
 }
 
-/* /* /////////////////////////////// */
+/* /////////////////////////////// */
 
-/* COLOR */
+/* HEADER */
 
 /* /////////////////////////////// */
 
-/* 
-#371b4e
-#506276
-#8595af
-#edf4fc 
-*/
-
-/* /////////////////////////////// */
-
-/* NAVIGATION */
-
-/* /////////////////////////////// */
-
-/* .nav-wrapper {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  color: #eeeeee;
-  background-color: #371b4e;
-  padding: 35px;
-  font-size: 30px;
-} */
-
-/* .logo-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
-} */
-
-/* .sticky nav {
+.nav-items {
+  background-color: slateblue;
   position: fixed;
   top: 0;
-  width: 100%;
-  background-color: #393e46;
-  z-index: 99;
-}
-
-.main-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  list-style: none;
-  text-align: center;
-}
-
-.main-nav li {
-  padding: 0 20px;
-  font-size: 1.2em;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #eeeeee;
-}
-
-.nav-link:hover {
-  color: pink;
-}
-
-.resp-nav {
-  display: none;
-  cursor: pointer;
-}
-
-.resp-nav div {
-  width: 25px;
-  height: 3px;
-  background-color: #eeeeee;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-.social-links {
-  /* display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding-left: 20px;
-  font-size: 1em; */
-
-/* display: none;
-} */
-
-*/
-/* /////////////////////////////// */
-
-/* HEADING / WRAPPERS */
-
-/* /////////////////////////////// */
-
-header {
-  height: 150vh;
-}
-
-.link {
-  text-decoration: none;
-  color: #ecf0f1;
-}
-
-.header-wrapper {
-  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.877)), url(./asset/passions2-bg.JPG) no-repeat center center;
-  background-size: cover;
-  height: 100%;
-}
-
-.bottom-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  height: 100vh;
-  width: 100%;
-  position: sticky;
-  top: 0;
-}
-
-.bottom-text-block {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  color: #ecf0f1;
-  position: sticky;
-  top: 0;
-  font-size: 2em;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  width: 100%;
-}
-
-.left {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
-  padding-right: 50px;
-}
-
-.center {
-  width: 50%;
-  text-align: center;
-  padding: 0 25px;
-}
-
-.center p {
-  text-align: center;
-}
-
-.right {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: right;
-  padding-left: 50px;
-}
-
-.about-wrapper {
-  background-size: cover;
-  height: 100%;
-  display: flex;
-}
-
-.projects-wrapper {
-  background: url(./asset/projects-bg.jpg) no-repeat center -200px fixed;
-  background-size: cover;
-  height: 100%;
-}
-
-/* /////////////////////////////// */
-
-/* BUTTONS */
-
-/* /////////////////////////////// */
-
-.button-container {
-  margin: 0 auto;
-  width: 35%;
-  text-align: center;
-}
-
-.button-container a {
-  text-decoration: none;
-}
-
-.copy-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
-  text-align: center;
-  background-color: #edf4fc;
-  color: #371b4e;
-  border: 1px solid black;
-  border-radius: 5px;
-  width: 100%;
-  height: 50px;
-  transition: ease-in .2s;
-}
-
-.copy-button:active {
-  background-color: #d1c0df4f;
-  color: #371b4ee0;
-}
-
-.copy-button:hover {
-  background-color: #371b4ee0;
-  color: #edf4fc;
-}
-
-/* /////////////////////////////// */
-
-/* CONTENT */
-
-/* /////////////////////////////// */
-
-.splide__slide img {
-  width: 100%;
-  height: auto;
-}
-
-.section {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 45px;
-  border-top: black 2px solid;
-  align-items: center;
-  height: 100%;
-  background-color: #edf4fc;
-  /* background-image: url(./asset/Whangaehu.svg); */
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  width: 100%;
-}
-
-.projects-section {
-  height: 100%;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 12px;
-  height: 100%;
-  width: 100%;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 75%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.projects .container {
-  width: 100%;
-  position: relative;
-}
-
-.projects .copy {
-  width: 50%;
-}
-
-.copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 15px;
-  box-shadow: 0px 6px 15px -8px rgba(0, 0, 0, 0.75);
-  background-color: #edf4fc;
-  border-radius: 10px;
-  max-width: 50%;
-  margin: 10px;
-}
-
-.copy p {
-  padding: 20px 0;
-}
-
-.fas {
-  font-size: 50px;
-}
-
-.icon-title {
-  padding: 10px;
-}
-
-.image {
-  margin: 15px;
-}
-
-.image1 {
-  border-radius: 10px;
-  /* background-image: url(./asset/zork-screenshot.png); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 500px;
-  display: inline-block;
-  /* padding: 20px; */
-  position: relative;
-}
-
-.image2 {
-  border-radius: 10px;
-  background-image: url(./asset/Screen\ Shot\ 2020-11-22\ at\ 1.08.32\ PM.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 500px;
-  display: inline-block;
-  padding: 20px;
-  position: relative;
-}
-
-.image3 {
-  border-radius: 10px;
-  background-image: url(./asset/colorbeat.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 500px;
-  display: inline-block;
-  padding: 20px;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: .4s ease;
-  background-color: #371b4e;
-  border-radius: 10px;
-}
-
-.image1:hover .overlay {
-  opacity: 0.8;
-}
-
-.image2:hover .overlay {
-  opacity: 0.8;
-}
-
-.image3:hover .overlay {
-  opacity: 0.8;
-}
-
-.hover-text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  height: 80px;
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 5%;
 }
 
-hr {
-  display: block;
-  position: relative;
-  margin: 8px auto;
-  width: 100px;
-  font-size: 1px;
+/* /////////////////////////////// */
+
+/* SECTIONS */
+
+/* /////////////////////////////// */
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8%;
 }
 
-footer {
-  height: 20vh;
-  background-color: #371b4e;
-  color: var(--main-text-color);
+.hero-section {
+  padding-top: 120px;
+}
+
+.section-heading {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-top: black 2px solid;
-}
-
-.footer-social {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 20%;
-  list-style: none;
-  font-size: 1.2rem;
-}
-
-.footer-social li {
-  padding: 10px;
-}
-
-/* /////////////////////////////// */
-
-/* RESPONSIVE */
-
-/* /////////////////////////////// */
-
-@media only screen and (max-width: 1000px) {
-  body {
-    /* overflow-x: hidden; */
-  }
-  #hidden {
-    position: relative;
-  }
-  header {
-    height: 150vh;
-  }
-  .header-wrapper {
-    background-position: center left 20%;
-    height: 100%;
-  }
-  .bottom-text-block {
-    flex-direction: column;
-    font-size: 160%;
-    padding-left: 20px;
-  }
-  .left {
-    width: 100%;
-    padding-bottom: 60px;
-  }
-  .center {
-    display: flex;
-    align-items: flex-start;
-    padding-top: 10px;
-    padding-left: 0;
-    padding-bottom: 60px;
-    width: 100%;
-  }
-  .center p {
-    text-align: left;
-  }
-  .right {
-    align-items: flex-start;
-    padding-left: 0px;
-    width: 100%;
-  }
-  .about-wrapper {
-    height: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-  .passions-wrapper {
-    height: 100%;
-    background-size: cover;
-    background-attachment: scroll;
-  }
-  .main-nav {
-    position: absolute;
-    /* right: 0px;
-    height: 100vh;
-    top: 0vh; */
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    /* transform: translateY(200%); */
-    transition: transform 0.2s ease-in;
-    background-color: #371b4e;
-  }
-  .main-nav li {
-    opacity: 0;
-  }
-  .resp-nav {
-    display: block;
-  }
-  .social-links {
-    font-size: 40px;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  }
-  .social-links li {
-    padding: 0 20px
-  }
-  .main {
-    background-color: transparent;
-  }
-  .section {
-    flex-direction: inherit;
-  }
-  .copy {
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: #edf4fc;
-    margin: 10px;
-    position: relative;
-  }
-  .projects .copy {
-    margin: 20px auto;
-  }
-  .nav-active {
-    transform: translateX(0%);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: 999;
-  }
-  .toggle {
-    z-index: 999;
-    position: fixed;
-    right: 14.5%;
-    top: 5%;
-  }
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateY(0px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
 }

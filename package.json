@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/connorjaymesmcg/personal-site#readme",
   "dependencies": {
-    "@splidejs/splide": "^2.4.20"
+    "@splidejs/splide": "^2.4.21"
   }
 }
