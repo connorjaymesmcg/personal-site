@@ -23,6 +23,7 @@ html {
 body {
   font-family: 'Ubuntu', sans-serif;
   /* font-size: 64.5%; */
+  overflow-x: hidden;
 }
 
 ul {
@@ -116,6 +117,7 @@ header {
 
 .section-content {
   display: flex;
+  flex-direction: column;
 }
 
 /* /////////////////////////////// */
@@ -129,11 +131,10 @@ header {
     position: fixed;
     width: 100%;
   }
-
   .nav-items {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 0%;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: #fff;
