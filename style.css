@@ -17,13 +17,14 @@
 html {
   scroll-behavior: smooth;
   background-color: #ecf0f1;
+  font-size: 62.5%;
   /* font-size: 125%; */
 }
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  /* font-size: 64.5%; */
   overflow-x: hidden;
+  font-size: 1.6em;
 }
 
 ul {
@@ -120,6 +121,14 @@ header {
   flex-direction: column;
 }
 
+.showcase {
+  display: flex;
+}
+
+.showcase-image img {
+  width: 95%;
+}
+
 /* /////////////////////////////// */
 
 /* RESPONSIVE */
@@ -167,5 +176,11 @@ header {
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .showcase {
+    flex-wrap: wrap;
+  }
+  .showcase-image {
+    width: 100%;
   }
 }
