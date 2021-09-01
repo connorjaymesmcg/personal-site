@@ -18,9 +18,10 @@ html {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   overflow-x: hidden;
   font-size: 1.6em;
+  color: rgba(255, 255, 255, .4);
 }
 
 ul {
@@ -29,7 +30,7 @@ ul {
   padding: 0;
 }
 
-.nav-link {
+.nav-link a {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 600;
@@ -37,6 +38,12 @@ ul {
   letter-spacing: 0.02rem;
   display: inline-block;
   padding: 15px 26px 10px;
+  text-decoration: none;
+}
+
+.nav-link a:visited {
+  text-decoration: none;
+  color: #fff
 }
 
 .hamburger {
@@ -59,6 +66,30 @@ ul {
 
 /* /////////////////////////////// */
 
+h1, h2, h3, h4 {
+  color: #fff;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  font-size: .85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  margin: 0 0 10px;
+  color: #bac964;
+}
+
+h4 {
+  margin: 1rem 0 -0.5rem;
+}
+
+p {
+  line-height: 1.55;
+  font-size: 1rem;
+  margin-top: 1.1rem;
+}
+
 i {
   color: #fff;
   font-size: 3.5rem;
@@ -67,12 +98,13 @@ i {
 .icon-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
 }
 
 .box-icon {
-  width: 50%;
+  width: 20%;
   height: 142px;
   margin-bottom: 10px;
 }
@@ -88,23 +120,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: slateblue;
+  /* background-color: slateblue; */
   padding: 1rem 1.5rem;
 }
 
 .nav-items {
-  /* position: fixed; */
   top: 0;
   right: 0;
-  /* bottom: 0; */
   left: 0;
   width: 100%;
   height: 100%;
   text-align: center;
   display: flex;
-  /* flex-wrap: nowrap; */
   justify-content: flex-end;
-  /* flex-direction: row; */
   align-items: center;
   padding-right: 5%;
 }
@@ -133,6 +161,7 @@ nav {
 .section-heading {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .section-content {
@@ -146,6 +175,10 @@ nav {
 
 #skills p:first-of-type {
   margin-top: 20px;
+}
+
+.works div:last-child {
+  margin-bottom: 0;
 }
 
 .showcase {
@@ -222,6 +255,17 @@ nav {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .box-icon {
+    width: 50%;
+    height: 142px;
+    margin-bottom: 10px;
+  }
   .showcase {
     flex-wrap: wrap;
   }
@@ -230,5 +274,6 @@ nav {
   }
   .showcase-description {
     width: 100%;
+    padding: 0;
   }
 }
