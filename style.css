@@ -30,41 +30,16 @@ ul {
   padding: 0;
 }
 
-.nav-link a {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-transform: lowercase;
-  letter-spacing: 0.02rem;
-  display: inline-block;
-  padding: 15px 26px 10px;
-  text-decoration: none;
-}
-
-.nav-link a:visited {
-  text-decoration: none;
-  color: #fff
-}
-
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
-
 /* /////////////////////////////// */
 
 /* UTILITIES */
 
 /* /////////////////////////////// */
+
+a:visited {
+  text-decoration: none;
+  color: #fff
+}
 
 h1, h2, h3, h4 {
   color: #fff;
@@ -80,7 +55,13 @@ h2 {
   color: #bac964;
 }
 
+h3 {
+  font-size: 2.4rem;
+}
+
 h4 {
+  font-size: 1.4rem;
+  font-weight: 200;
   margin: 1rem 0 -0.5rem;
 }
 
@@ -120,7 +101,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: slateblue; */
+  background-color: rgba(34, 34, 34, 0.893);
   padding: 1rem 1.5rem;
 }
 
@@ -135,6 +116,36 @@ nav {
   justify-content: flex-end;
   align-items: center;
   padding-right: 5%;
+}
+
+.nav-link a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.02rem;
+  display: inline-block;
+  padding: 15px 26px 10px;
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  transition: .4s;
+  color: #bac964;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #bac964;
 }
 
 .hero-image {
@@ -193,7 +204,7 @@ nav {
 }
 
 .showcase-image {
-  width: 50%;
+  width: 55%;
 }
 
 .showcase-image img {
@@ -203,7 +214,7 @@ nav {
 }
 
 .showcase-description {
-  width: 50%;
+  width: 45%;
   padding: 0 40px
 }
 
@@ -224,7 +235,7 @@ nav {
     top: 0%;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #fff;
+    background-color: #222;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -233,15 +244,14 @@ nav {
   }
   .nav-items.active {
     left: 0%;
+    background-color: #222
   }
   .nav-items li {
     margin: 2.5rem 0;
     padding: 0;
     display: block;
   }
-  header {
-    background-color: coral;
-  }
+  header {}
   .hamburger {
     display: block;
     cursor: pointer;
