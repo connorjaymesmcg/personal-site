@@ -102,6 +102,8 @@ nav {
   justify-content: space-between;
   background-color: rgba(34, 34, 34, 0.893);
   padding: 1rem 1.5rem;
+  position: relative;
+  z-index: 999;
 }
 
 .nav-items {
@@ -147,7 +149,29 @@ nav {
 }
 
 .hero-image {
-  background-image: url(./assets/IMG_2059.jpeg);
+  height: 100vh;
+  background-image: url(./assets/cutout-w-bg\ 2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+}
+
+.hero-section {
+  padding-top: 120px;
+  display: block;
+  position: relative;
 }
 
 /* /////////////////////////////// */
@@ -161,10 +185,6 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding: 0 8%;
-}
-
-.hero-section {
-  padding-top: 120px;
 }
 
 .section-heading {
