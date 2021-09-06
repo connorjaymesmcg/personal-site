@@ -4,7 +4,7 @@ const navLink = document.querySelectorAll('.nav-link');
 const rotator = document.getElementById('rotator');
 
 hamburger.addEventListener('click', mobileMenu);
-// window.addEventListener('click', cycleWords);
+// setInterval(cycleWords, 1000);
 navLink.forEach((link) => link.addEventListener('click', closeMenu));
 
 function mobileMenu() {
@@ -19,11 +19,8 @@ function closeMenu() {
 
 const wordList = ['a web developer', 'a guitarist', 'a music nerd', 'an outdoor enthusiast', 'a hypochondriac', 'a breakfast food wizard', 'a bad chess player'];
 
-function cycleWords() {
-  let randomItem = wordList[Math.floor(Math.random() * wordList.length)];
-  let timer = setInterval(() => {
-    rotator.innerHTML = randomItem;
-    console.log(timer);
-    cycleWords();
-  }, 1000);
-}
+// let i = 0;
+// function cycleWords() {
+//   rotator.innerHTML = wordList[i];
+//   i = ++i % wordList.length;
+// }
