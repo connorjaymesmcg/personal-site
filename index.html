@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property='og:image' content="cutout-w-bg 2.png">
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <nav>
       <a href="#" class="logo">Connor McG</a>
       <ul class="nav-items">
@@ -35,13 +36,13 @@
       <div class="wrapper">
         <div class="hero-section">
           <h1>I'm Connor McGinnis</h1>
-          <h3 class="rotator">and I'm
+          <p class="rotator">and I'm
             <span>a web developer</span>
             <span>a guitarist</span>
             <span>a music nerd</span>
             <span>an outdoor enthusiast</span>
             <span>a hypochondriac</span>
-          </h3>
+          </p>
         </div>
       </div>
     </div>
@@ -55,13 +56,20 @@
           <h3>who is he</h3>
         </div>
         <div class="section-content">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis vitae corporis, veritatis
-            aliquid quidem fugiat, consectetur obcaecati hic tempore eos amet consequuntur ex eveniet nulla laborum
-            provident, esse explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate facere
-            quaerat repellendus ea beatae repellat magni illo odit voluptate perferendis, laboriosam molestias
-            recusandae quam nobis consequatur nam dolores cumque minus! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Excepturi ducimus corrupti maxime, tenetur molestiae repellendus pariatur assumenda
-            voluptate minima minus repellat. Cum porro nulla aut magni! Officia inventore numquam hic.</p>
+          <p>My name is <span>Connor McGinnis</span> and I’m equal parts human, musician, web developer, and gluten
+            avoider. Since
+            2019 I’ve been swimming in the endless sea of web development, web design, and software engineering soaking
+            up all I can.
+            <br>
+            <br>
+            I am a graduate of Burlington Code Academy located in beautiful Burlington, Vermont and
+            haven’t skipped a day of coding since. When I’m not expanding my web development and design skills, I’m
+            usually playing guitar, going for a run
+            alongside Lake Champlain, being a subpar skateboarder, or planning my next adventure.
+            <br>
+            <br>
+            I’m currently available for freelance work, so feel free to reach out and tell me what we can partner on!
+          </p>
         </div>
       </div>
     </div>
@@ -114,13 +122,6 @@
               <p>VS Code</p>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis vitae corporis, veritatis
-            aliquid quidem fugiat, consectetur obcaecati hic tempore eos amet consequuntur ex eveniet nulla laborum
-            provident, esse explicabo! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate facere
-            quaerat repellendus ea beatae repellat magni illo odit voluptate perferendis, laboriosam molestias
-            recusandae quam nobis consequatur nam dolores cumque minus! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Excepturi ducimus corrupti maxime, tenetur molestiae repellendus pariatur assumenda
-            voluptate minima minus repellat. Cum porro nulla aut magni! Officia inventore numquam hic.</p>
         </div>
       </div>
     </div>
@@ -137,12 +138,13 @@
             </div>
             <div class="showcase-description">
               <h4>gowherefast</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, rem! Sunt totam, obcaecati
-                distinctio cumque voluptatem omnis, eligendi reiciendis nihil ipsa laboriosam fuga nam illo vel amet
-                itaque, qui optio?</p>
+              <p>One of my first forays into the world of React and the Google Maps API - go anywhere, take a look at
+                restaurants, hotels, and even some interesting, off the beaten path attractions. What started as an
+                exercise actually led to me using this to find some new places to explore! </p>
               <div class="btn-container">
-                <div class="btn">btn</div>
-                <div class="btn">btn</div>
+                <a href="https://gowherefast.netlify.app/" target="_blank" class="btn"> <span>View It</span></a>
+                <a href="https://github.com/connorjaymesmcg/gowherefast" target="_blank" class="btn"><span>View GitHub
+                    Repo</span></a>
               </div>
             </div>
           </div>
@@ -152,9 +154,15 @@
             </div>
             <div class="showcase-description">
               <h4>Do What</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, rem! Sunt totam, obcaecati
-                distinctio cumque voluptatem omnis, eligendi reiciendis nihil ipsa laboriosam fuga nam illo vel amet
-                itaque, qui optio?</p>
+              <p>My instructor at Burlington Code Academy always said, “Start your software development career by
+                solving a problem”, and one of my problems was having too many post-it notes on my desk at one time. So
+                save yourself some money and use this React-based To-Do application. It uses local storage to save your
+                To-Dos in the browser.</p>
+              <div class="btn-container">
+                <a href="https://dowhat.netlify.app/" target="_blank" class="btn"><span>View It</span></a>
+                <a href="https://github.com/connorjaymesmcg/do-what" target="_blank" class="btn"><span>View GitHub
+                    Repo</span></a>
+              </div>
             </div>
           </div>
           <div class="showcase r2l">
@@ -163,28 +171,27 @@
             </div>
             <div class="showcase-description">
               <h4>Doom Cafe</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, rem! Sunt totam, obcaecati
-                distinctio cumque voluptatem omnis, eligendi reiciendis nihil ipsa laboriosam fuga nam illo vel amet
-                itaque, qui optio?</p>
+              <p>Doom Cafe is not a real cafe (but someday, maybe?), but in essence, I created this site as an exercise
+                to learn the ins-and-outs of WordPress. It’s an ever-changing site that I have a blast fine-tuning and
+                tweaking as my WordPress ability expands. </p>
+              <div class="btn-container">
+                <a href="https://doomcafe.com/" target="_blank" class="btn"><span>View It</span></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     </div>
-    <!-- <div id="testimonials">
-      <div class="wrapper">
-        <div class="section-heading">
-          <h2>testimonials</h2>
-          <h3>what are folks saying</h3>
-        </div>
-      </div>
-    </div> -->
     <div id="contact" class="section">
       <div class="wrapper">
         <div class="section-heading">
           <h2>contact</h2>
           <h3>let's talk</h3>
+          <div class="contact-box">
+            <p><a class="email" href="mailto: connorjaymesmcg@gmail.com">connorjaymesmcg@gmail.com</a></p>
+            <p>802.353.8788</p>
+          </div>
         </div>
       </div>
     </div>
